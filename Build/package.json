@@ -1,0 +1,11 @@
+{
+	"name": "typo3-nav-params",
+	"version": "1.0.0",
+	"private": true,
+	"license": "private",
+	"dependencies": {},
+	"devDependencies": {},
+	"scripts": {
+		"php-cs-fix": "../.build/bin/php-cs-fixer fix ../Classes"
+	}
+}

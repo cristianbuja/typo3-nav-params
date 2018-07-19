@@ -1,6 +1,6 @@
 <?php
 
-namespace Intera\NavParams\Hooks;
+namespace CristianBuja\NavParams\Hooks;
 
 /**
  * This file is part of the "nav_params" Extension for TYPO3 CMS.

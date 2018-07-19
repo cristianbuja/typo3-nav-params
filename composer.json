@@ -25,7 +25,7 @@
     }
   },
   "replace": {
-    "cristianbuja/typo3-nav-params": "self.version",
+    "nav-params": "self.version",
     "typo3-ter/nav-params": "self.version"
   },
   "config": {

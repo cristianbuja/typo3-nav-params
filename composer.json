@@ -1,0 +1,49 @@
+{
+  "name": "cristianbuja/typo3-nav-params",
+  "description": "Add url params to navigation shortcuts",
+  "type": "typo3-cms-extension",
+  "license": [
+    "GPL-3.0"
+  ],
+  "version": "1.0.0",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^8.7.0|| >=9.1.0 <9.5.0",
+    "typo3/cms-frontend": "^8.7.0|| >=9.1.0 <9.5.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "typo3/minimal": "^8.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CristianBuja\\NavParams\\": "Classes"
+    }
+  },
+  "replace": {
+    "nav_params": "self.version",
+    "typo3-ter/nav-params": "self.version"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "bin-dir": ".build/bin",
+    "vendor-dir": ".build/vendor"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".build/web"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .build/web/typo3conf/ext/",
+      "[ -L .build/web/typo3conf/ext/nav_params ] || ln -snvf ../../../../. .build/web/typo3conf/ext/nav_params"
+    ]
+  }
+}

@@ -21,6 +21,7 @@ nbproject
 phantomjsdriver.log
 
 # Stuff
+.ddev
 .build
 composer.lock
 package-lock.json

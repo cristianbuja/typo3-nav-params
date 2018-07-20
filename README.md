@@ -6,10 +6,6 @@ This README would normally document whatever steps are necessary to get your app
 
 * Quick summary
 * Version
-* Aggiunge configurazioni e funzionalità a una selezione di estensioni di TYPO3 adatte al Bootstrap Package
-- Configurazione per le lingue
-- HTML email in felogin
-- integrazione di femanager per bootstrap package
 
 ### How do I get set up? ###
 
